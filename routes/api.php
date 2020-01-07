@@ -17,4 +17,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/ruangan', 'RuanganController@get_all_ruangan');
+Route::get('ruangan', 'RuanganController@get_all_ruangan');
+Route::post('ruangan', 'RuanganController@create_ruangan');
