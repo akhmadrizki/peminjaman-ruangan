@@ -23,4 +23,7 @@ Route::post('ruangan', 'RuanganController@create_ruangan');
 Route::put('ruangan/{id}', 'RuanganController@update_ruangan');
 Route::delete('ruangan/{id}', 'RuanganController@delete_ruangan');
 
+Route::post('booking', 'PinjamController@create_pinjaman');
+Route::get('booking', 'PinjamController@get_pinjaman');
+
 Route::get('mahasiswa', 'MahasiswaController@index');
