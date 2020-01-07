@@ -19,5 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('ruangan', 'RuanganController@get_all_ruangan');
 Route::post('ruangan', 'RuanganController@create_ruangan');
+
 Route::put('ruangan/{id}', 'RuanganController@update_ruangan');
 Route::delete('ruangan/{id}', 'RuanganController@delete_ruangan');
+
+Route::get('mahasiswa', 'MahasiswaController@index');
