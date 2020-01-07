@@ -20,6 +20,9 @@ class CreateRuangansTable extends Migration
             $table->bigInteger('jumlah_kursi');
             $table->bigInteger('jumlah_meja');
             $table->string('status_ruangan');
+            $table->string('tanggal_pinjam')->nullable()->default(null);
+            $table->string('tanggal_kembali')->nullable()->default(null);
+            $table->unsignedInteger('id_mahasiswa')->nullable()->default(null);
             $table->timestamps();
         });
     }

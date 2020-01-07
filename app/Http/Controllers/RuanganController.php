@@ -17,6 +17,9 @@ class RuanganController extends Controller
 		$ruangan->jumlah_kursi = $req->jumlah_kursi;
 		$ruangan->jumlah_meja = $req->jumlah_meja;
 		$ruangan->status_ruangan = $req->status_ruangan;
+		$ruangan->tanggal_pinjam = $req->tanggal_pinjam;
+        $ruangan->tanggal_kembali = $req->tanggal_kembali;
+		$ruangan->id_mahasiswa = $req->id_mahasiswa;
 
 		$ruangan->save();
 
@@ -28,6 +31,7 @@ class RuanganController extends Controller
 		$ruangan->fasilitas = $req->fasilitas;
 		$ruangan->jumlah_kursi = $req->jumlah_kursi;
 		$ruangan->jumlah_meja = $req->jumlah_meja;
+		$ruangan->id_mahasiswa = $req->id_mahasiswa;
 
 		$ruangan->save();
 

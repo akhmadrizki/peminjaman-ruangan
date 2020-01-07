@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Ruangan;
 
 class Mahasiswa extends Model
 {
@@ -13,4 +14,10 @@ class Mahasiswa extends Model
         'angkatan',
         'jurusan'
     ];
+
+    public function ruangan()
+    {
+        return $this->hasOne(Ruangan::class);
+    }
+
 }
