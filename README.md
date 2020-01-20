@@ -34,8 +34,9 @@ $ php artisan storage:link
 ```sh
 $ php artisan serve
 ```
-7. Setelah men run ```sh $ php artisan serve ```:
+7. Setelah men run ``` $ php artisan serve ```:
 Silahkan jalankan di aplikasi POSTMAN atau sejenisnya
 ### Link URL localhost:8000/api/...
+
 
 ## Terimakasih Akhmad Rizki & Team
